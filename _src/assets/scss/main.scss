@@ -1,0 +1,25 @@
+@import 'core/settings';
+@import 'components/buttons';
+
+body {
+	background: url('../images/logo-adalab-80px.png') center center no-repeat $color-white;
+	height: 100vh;
+	margin: 0;
+}
+header {
+	height: 75px;
+	@media all and (min-width: 768px) {
+		height: 100px;
+	}
+	@media all and (min-width: 1280px) {
+		height: 110px;
+	}
+}
+.first {
+	height: 50vh;
+	text-align: center;
+}
+.button {
+	@include littlebutton();
+
+}
